@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --Very-dark-grayish-blue: hsl(237, 12%, 33%);
+    -- Dark-grayish-blue: hsl(240, 6%, 50%);
+    -- Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    -- Soft-red: hsl(14, 88%, 65%);
+
+}
+
+body{
+  
+    background-image: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    background-repeat: no-repeat;
+        
+}
+
+.wrapper{
+    margin: 100%;
+    padding: 100%;
+    box-sizing: border-box;
+}
+
+.info_card{
+    
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+
+}
+
+ul {
+    padding: 0%;       
+}
+
+
+
+ 
+
+@media only screen and (max-width:1440px) {
+
+    
+    /*----------------contenedor principal de la card --------------------*/
+    .container{
+        
+         
+      
+        box-shadow: -6px 24px 70px -28px black;
+        
+        /*----------------declaramos que todo el contenido tome una posicion flex row es decir fila(uno al lado del otro) --------------------*/
+        display: flex;
+        flex-direction: row;
+    
+        /*----------------al contendor principal le ponemos un fondo blanco diferenciandolo del background que tiene el body --------------------*/
+        background: white;
+        
+        /*---------------- agregamos border y el ancho/alto del contenedor en cuestion --------------------*/
+        border-radius: 20px;
+        height: 500px;
+        width: 70%;
+    
+        /*---------------- le damos una posicion absoluta para centrar en todo la pantalla el contenedor y centramos el contenido con el align--------------------*/
+        position: absolute;
+        align-items: center;
+    
+        /*----------------distancia de los margenes de la pantalla--------------------*/
+        top: 70%;
+        left: 15%;
+    
+        /*----------------indicamos que todo el contenido no desborde por fuera del contenedor y quede por dentro del mismo--------------------*/
+       
+        overflow: hidden;
+    
+     }
+    
+        /*---------------- posicionamos el texto dentro del contenedor --------------------*/
+    .subcontainer{
+        
+            padding: 35px;
+            width: 80%;
+        }
+    
+        /*----------------editamos y sacamos algunas caracteristicas adicionales del ul y agregamos borde abajo --------------------*/
+   
+    
+    .img_card{
+        background-image: url(./images/illustration-woman-online-desktop.svg), url(./images/bg-pattern-desktop.svg);
+        background-position: 100% 55%, 100% -10%;
+        background-repeat: no-repeat, no-repeat;
+        height: 1000px;
+        width: 73%;
+        position: relative;
+        align-items: center;
+        top: -60px;
+        left: -70px;
+        
+    }
+    
+    .img_arroba{
+        background-image: url(./images/illustration-box-desktop.svg);
+        height: 150px;
+        background-repeat: no-repeat;
+        width: 10%;
+        z-index: 1;
+        align-items: center;
+        top: 670px;
+        left: 90px;
+        position: absolute;
+
+    }
+    .arroba_card{
+        position: absolute;
+        z-index: 1;
+        top: 485px;
+        left: 0px;
+    }
+    
+    h1{
+        text-align: left;
+    }
+    details {
+
+        position: relative;
+        color: grey;
+
+      }
+      
+      details {
+    
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        margin-right: 80px;
+    
+        list-style: none;
+        text-decoration: none;
+    
+        border-bottom: 1px solid hsl(240, 6%, 50%);
+    }
+    
+    details summary {
+
+        font-weight: 400;
+        font-size: 12px;
+        padding-left: 0rem;
+        padding-bottom: 30px;
+        cursor: pointer;
+        list-style: none;
+
+
+      }
+      
+     
+      details :hover{
+
+          color: coral;
+          
+      }
+      
+      details[open] summary {
+
+        font-weight: 700;
+        color: black;
+
+      }
+
+    p{
+          padding: 0px;
+          margin-bottom: 10px;
+          width: 86%;
+      }
+      
+      details summary::before {
+
+        position: absolute;
+        content: url(./images/icon-arrow-down.svg);
+        font-size: 19px;
+        right: 16px;
+
+      }
+      
+      details[open] summary::before {
+        -webkit-animation: rotate 0.6s ease-in-out both;
+        animation: rotate-emoji 0.6s ease-in-out both;
+      }
+      
+      @-webkit-keyframes rotate-emoji {
+        0% {
+          -webkit-transform: rotate(0);
+          transform: rotate(0);
+        }
+        100% {
+          -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+        }
+      }
+    
+}
+    
+@media only screen and (min-width:375px) and (max-width:768px){
+ 
+    
+
+    
+    /*----------------contenedor principal de la card --------------------*/
+    .container{
+        
+       
+            box-shadow: -6px 24px 70px -28px black;
+          /*----------------declaramos que todo el contenido tome una posicion flex row es decir fila(uno al lado del otro) --------------------*/
+            display: flex;
+            flex-direction: column;
+        /*----------------al contendor principal le ponemos un fondo blanco diferenciandolo del background que tiene el body --------------------*/
+
+            background: white;
+        /*---------------- agregamos border y el ancho/alto del contenedor en cuestion --------------------*/
+
+            border-radius: 20px;
+            height: 600px;
+            width: 93%;
+
+        /*---------------- le damos una posicion absoluta para centrar en todo la pantalla el contenedor y centramos el contenido con el align--------------------*/
+
+            position: absolute;
+            align-items: center;
+
+        /*----------------distancia de los margenes de la pantalla--------------------*/
+
+            top: 70%;
+            left: 5%;
+
+     /*----------------indicamos que todo el contenido no desborde por fuera del contenedor y quede por dentro del mismo--------------------*/
+
+            overflow: hidden;
+    
+
+     }
+    
+        /*---------------- posicionamos el texto dentro del contenedor --------------------*/
+    .subcontainer{
+        
+        padding: 35px;
+        width: 95%;
+        }
+    
+        /*----------------editamos y sacamos algunas caracteristicas adicionales del ul y agregamos borde abajo --------------------*/
+   
+    
+    .img_card{
+
+        background-image: url(./images/bg-pattern-mobile.svg);
+        background-position: 60% 40%;
+        background-repeat: no-repeat;
+        height: 19%;
+        width: 100%;
+        align-self: center;
+        top: 7px;
+        left: 0px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+    
+    .img_arroba{
+
+        background-image: url(./images/illustration-woman-online-mobile.svg);
+        height: 150px;
+        background-repeat: no-repeat;
+        width: 100%;
+        z-index: 1;
+        text-align: center;
+        display: flex;
+        top: 312px;
+        left: 100px;
+        position: absolute;
+        flex-direction: column;
+        align-content: unset;
+
+    }
+    .arroba_card{
+
+        position: absolute;
+        z-index: 1;
+        top: 485px;
+        left: 0px;
+    }
+    
+    .info_card{
+    
+    width: 100%;
+    margin-top: 30px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    }
+
+    h1 {
+        margin-left: 30%;
+        margin-bottom: 30px;
+    }
+    
+    details {
+
+        position: relative;
+        color: grey;
+
+
+    }
+      
+    details {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-right: 80px;
+
+    list-style: none;
+    text-decoration: none;
+
+    border-bottom: 1px solid hsl(240, 6%, 50%);
+    }
+
+      details summary {
+
+        font-weight: 400;
+        font-size: 12px;
+
+        padding-left: 0rem;
+        margin-right: 50px;
+        padding-bottom: 30px;
+
+        cursor: pointer;
+        list-style: none;
+
+
+      }
+      
+     
+      details :hover{
+
+          color: coral;
+          
+      }
+      
+      details[open] summary {
+
+        font-weight: 700;
+        color: black;
+
+      }
+
+    p{
+        padding: 0px;
+        margin-bottom: 10px;
+        width: 100%;
+      }
+      
+      details summary::before {
+
+        position: absolute;
+        content: url(./images/icon-arrow-down.svg);
+        font-size: 12px;
+    right: 0px;
+
+      }
+      
+      details[open] summary::before {
+        -webkit-animation: rotate 0.6s ease-in-out both;
+        animation: rotate-emoji 0.6s ease-in-out both;
+      }
+      
+      @-webkit-keyframes rotate-emoji {
+        0% {
+          -webkit-transform: rotate(0);
+          transform: rotate(0);
+        }
+        100% {
+          -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+        }
+      }
+    
+}
+    
+    
+}
+/*Tamaño del body y su gradiente*/
+

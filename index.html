@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+<body>
+  
+    <!--Encierra el contenido de la pagina a nivel general/TODO-->
+
+    <div class="wrapper">
+
+        <!--imagen del arroba declarada por fuera del contenedor(objetivo:quede por encima del contenedor)-->
+
+            <div class="img_arroba"> </div>
+        
+
+            <!--Contenedor de las imagenes y informacion en conjunto-->
+
+            <div class="container">
+                
+                <!--Aca declaramos la etiqueta div "img_card" para agregar las imagenes superpuestas desde CSS-->
+
+                <div class="img_card"> </div>
+                
+                <!--"subcontainer" engloba dentro de un div todo el contenido text/info para modificar, margen/ancho/altura desde CSS-->
+
+                <div class="subcontainer">
+                
+                <!--"info_card" contiene el texto plano directamente-->
+
+                <div class="info_card">
+                       
+                      <!--Titulo principal de la card--> 
+                       
+                       
+                      <!--lista no ordenada ul para contener el subtitulo el cual contiene el texto que sigue debajo--> 
+               <ul open class="conteinerinfo" id="menu" >
+
+                           
+                            <h1>FAQ</h1>
+                           
+                         <!--atribucion contiene el title como referencia y ademas usamos la funcion onclick para ejecutar la funcion clickear para desplegar el texto(esto lo haremos desde JS)--> 
+                            <details open>
+                                    
+                                <summary >How many team members can I invite?</summary> 
+                                
+                            
+                                <p>   You can invite up to 2 additional users on the Free plan. There is no limit on 
+                                                team members for the Premium plan.</p>
+                                                
+                                        
+                            </details>  
+              
+                        
+                       <!--LO ANTERIOR SE REPITE CUATRO VECES CON LOS DISTINTOS SUBTITULOS Y SUS TEXTOS CORRESPONDIENTES-->
+                       
+                       
+                        
+
+                            <details>
+                                    
+                                <summary>What is the maximum file upload size?</summary>
+                                
+                                
+                                <p> No more than 2GB. All files in your account must fit your allotted storage space.</p>
+
+
+                            </details>       
+
+                            
+                            <details>
+                                    
+                                <summary>How do I reset my password?</summary>
+                                
+                                
+                                <p> Click “Forgot password” from the login page or “Change password” from your profile page.
+                                    A reset link will be emailed to you.</p>
+
+                            </details>       
+
+                            
+                            <details>
+                                    
+                                <summary>Can I cancel my subscription?</summary>
+                                
+                                
+                                <p> Yes! Send us a message and we´ll process your request no questions asked.</p>
+
+                            </details>     
+                            
+                            <details>
+                                    
+                                <summary>Do you provide additional support?</summary>
+                                
+                                
+                                <p> Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+
+                            </details>   
+                
+
+                </ul> 
+                    
+                </div>
+            </div>
+
+            </div>
+
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
